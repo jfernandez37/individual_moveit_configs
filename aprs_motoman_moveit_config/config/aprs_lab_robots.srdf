@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="aprs_lab_robots">
     <group name="aprs_motoman">
-      <chain base_link="motoman_base_link" tip_link="link_t" />
+      <chain base_link="world" tip_link="link_t" />
     </group>
+
+    <group_state name="home" group="aprs_motoman">
+      <joint name="joint_b" value="0.0"/>
+      <joint name="joint_e" value="-1.571"/>
+      <joint name="joint_l" value="0"/>
+      <joint name="joint_r" value="-1.571"/>
+      <joint name="joint_s" value="-1.571"/>
+      <joint name="joint_t" value="1.571"/>
+      <joint name="joint_u" value="1.571"/>
+    </group_state>
     
     <disable_collisions link1="link_b" link2="link_e" reason="Never"/>
     <disable_collisions link1="link_b" link2="link_l" reason="Never"/>

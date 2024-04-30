@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../moveit_test"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../aprs_lab/aprs_description"
+		}
+	],
+	"settings": {}
+}

@@ -19,6 +19,6 @@ moveit_simple_controller_manager:
       - joint_e
       - joint_l
       - joint_r
-      - joint_u
       - joint_s
       - joint_t
+      - joint_u
